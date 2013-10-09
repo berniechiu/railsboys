@@ -1,9 +1,12 @@
 Railsboys::Application.routes.draw do
 
-  get "pages/info"
+  resources :comments
 
-  resources :ideas
+
   root to: 'ideas#index'
+  resources :ideas
+  
+  get "pages/info"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
