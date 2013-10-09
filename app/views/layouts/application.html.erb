@@ -13,7 +13,12 @@
     <div class="container">
       <a class="brand" href="/">THE IDEA APP</a>
       <ul class="nav">
-        <li class="active"><a href="/ideas">Ideas</a></li>
+        <li class="<%= 'active' if controller_name == 'ideas' %>">
+          <a href="/ideas">Ideas</a>
+        </li>
+        <li class="<%= 'active' if controller_name == 'pages' %>">
+          <a href="/pages/info">Info</a>
+        </li>
       </ul>
     </div>
   </div>
