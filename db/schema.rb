@@ -21,12 +21,4 @@ ActiveRecord::Schema.define(:version => 20131009113936) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "ideas", :force => true do |t|
-    t.string   "name"
-    t.text     "description"
-    t.string   "picture"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
 end
